@@ -21,4 +21,4 @@ def index():
 def qgen():
     img_str=request.args.get('img_str')
     return render_template('qr.html',img_str=img_str)
-app.run(debug=True)
+app.run(host="0.0.0.0",port="80",debug=True)
